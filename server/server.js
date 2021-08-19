@@ -33,7 +33,7 @@ app.get('/check-cookie', (req, res) => {
     res.header({
 
     });
-    res.status(200).send({message: "checking your cookie"});
+    res.status(200).send({message: `checking your cookie...\nRequest Cookie: ${JSON.stringify(req.cookies)}`});
 });
 
 app.listen(process.env.SERVER_PORT || 4500, () => {

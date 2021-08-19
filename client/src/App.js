@@ -31,8 +31,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-        <button onClick={setCookieRequest}>Set Cookie</button>
+        <button onClick={setCookieRequest} style={{marginBottom: "8px"}}>Set Cookie</button>
         <button onClick={checkCookieRequest}>Check cookie</button>
       </header>
     </div>
